@@ -5,13 +5,15 @@ This tutorial explores two important ways of downloading a dataset from the inte
 # Method 1: Using the download.file() function in R
 1) Use the function setwd() to choose the directory where the file should be saved:
 
->setwd("C:\\Users\\btayo\\Desktop\\grade_classifier")
+ setwd("C:\\Users\\btayo\\Desktop\\grade_classifier")
 
 2) Then use the function download.file(url, filename) to download the file. Here, url is a string containing the URL of the file, and filename is the filename of the destination file. 
 # Notes on providing the correct URL
 If you navigate to the github repository https://github.com/bot13956/datasets and click on the file: introduction_to_physics_grades.csv, it takes you to the following URL: https://github.com/bot13956/datasets/blob/master/introduction_to_physics_grades.csv
 If you input this URL into your download.file() function, for example using the command:
-> download.file("https://github.com/bot13956/datasets/blob/master/introduction_to_physics_grades.csv", "grades.csv"), you get the following messages:
+
+download.file("https://github.com/bot13956/datasets/blob/master/introduction_to_physics_grades.csv", "grades.csv"), you get the following messages:
+
 trying URL 'https://github.com/bot13956/datasets/blob/master/introduction_to_physics_grades.csv'
 Content type 'text/html; charset=utf-8' length unknown
 downloaded 195 KB
@@ -23,7 +25,8 @@ Then click on the csv file: introduction_to_physics_grades.csv
 Then click on the Raw button in the top right. This should open the file as a csv file.
 Now copy the URL on this page: https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv
 This is the URL that you should use as argument in the download.file() function. The correct code is thus:
-> download.file("https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv", "grades.csv")
+
+download.file("https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv", "grades.csv")
 
 Note that once this command is issued, the following messages are produced:
 trying URL 'https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv'
@@ -34,16 +37,21 @@ This shouws the file has been downloaded in the correct format with content type
 
 To view and analyze the data contained in the downloaded "grades.csv" file, you may use the following commands:
 
-> library(readr)
-> df<-read.csv("grades.csv")
-> head(df)
+library(readr)
+
+df<-read.csv("grades.csv")
+
+head(df)
 
 # Method 2: Using the read.csv() function in R
 
 We can use the read.csv() function to read the data directly into our workspace and assign it to a new dataframe object using the following command:
-> library(readr)
-> df<-read.csv("https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv")
-> head(df)
+
+library(readr)
+
+df<-read.csv("https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv")
+
+head(df)
 
 There are so many different ways of downloading datasets from the internet. I think the functions download.file() and read.csv() provide a very simple and straightforward way to download datasets from the internet. 
 
