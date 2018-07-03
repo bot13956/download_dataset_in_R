@@ -35,7 +35,7 @@ trying URL 'https://raw.githubusercontent.com/bot13956/datasets/master/introduct
 Content type 'text/plain; charset=utf-8' length 9562 bytes
 downloaded 9562 bytes
 
-This shouws the file has been downloaded in the correct format with content type set to text/plain. 
+This shows that the file has been downloaded in the correct format with content type set to text/plain. 
 
 To view and analyze the data contained in the downloaded "grades.csv" file, you may use the following commands:
 
