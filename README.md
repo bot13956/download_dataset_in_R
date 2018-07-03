@@ -5,7 +5,7 @@ This tutorial explores two important ways of downloading a dataset from the inte
 # Method 1: Using the download.file() function in R
 1) Use the function setwd() to choose the directory where the file should be saved:
 
->> setwd("C:\\Users\\btayo\\Desktop\\grade_classifier")
+>setwd("C:\\Users\\btayo\\Desktop\\grade_classifier")
 
 2) Then use the function download.file(url, filename) to download the file. Here, url is a string containing the URL of the file, and filename is the filename of the destination file. 
 # Notes on providing the correct URL
