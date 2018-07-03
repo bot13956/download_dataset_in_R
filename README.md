@@ -30,6 +30,7 @@ This is the URL that you should use as argument in the download.file() function.
 download.file("https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv", "grades.csv")
 
 Note that once this command is issued, the following messages are produced:
+
 trying URL 'https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv'
 Content type 'text/plain; charset=utf-8' length 9562 bytes
 downloaded 9562 bytes
