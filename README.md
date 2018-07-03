@@ -16,15 +16,21 @@ If you input this URL into your download.file() function, for example using the 
 download.file("https://github.com/bot13956/datasets/blob/master/introduction_to_physics_grades.csv", "grades.csv"), you get the following messages:
 
 trying URL 'https://github.com/bot13956/datasets/blob/master/introduction_to_physics_grades.csv'
+
 Content type 'text/html; charset=utf-8' length unknown
+
 downloaded 195 KB
 
 The file has been downloaded incorrectly, as the content type is set to text/html. If you navigate to your working directory (that is the "C:/Users/btayo/Desktop/grade_classifier" directory in this example) and click on the downloaded "grades.csv" in your local directory, you notice that the file has been downloaded in html format. This is definitely not the correct format.  Because we are downloading as csv file, we want the content type to be set to text/plain, not text/html. 
 
 To download the csv file in the text/plain format, navigate to the github repository: https://github.com/bot13956/datasets
+
 Then click on the csv file: introduction_to_physics_grades.csv 
+
 Then click on the Raw button in the top right. This should open the file as a csv file.
+
 Now copy the URL on this page: https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv
+
 This is the URL that you should use as argument in the download.file() function. The correct code is thus:
 
 download.file("https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv", "grades.csv")
@@ -32,7 +38,9 @@ download.file("https://raw.githubusercontent.com/bot13956/datasets/master/introd
 Note that once this command is issued, the following messages are produced:
 
 trying URL 'https://raw.githubusercontent.com/bot13956/datasets/master/introduction_to_physics_grades.csv'
+
 Content type 'text/plain; charset=utf-8' length 9562 bytes
+
 downloaded 9562 bytes
 
 This shows that the file has been downloaded in the correct format with content type set to text/plain. 
