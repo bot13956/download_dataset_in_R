@@ -3,11 +3,12 @@
 This tutorial explores two important ways of downloading a dataset from the internet. Most often, we use data from various sources to perform analysis. In most cases, the data can be downloaded from the internet. In this tutorial, we provide easy step-by-step instructions that can be used to download files from the internet. The instructions are applicable for any file type, however we will focus on comma separated values (cvs) files, since most datasets are saved in this format. In this example, we show how to download the file: introduction_to_physics_grades.csv from the following repository: https://github.com/bot13956/datasets
 
 # Method 1: Using the download.file() function in R
-1) Use the function setwd() to choose the directory where the file should be saved:
+Use the function setwd() to choose the directory where the file should be saved:
 
- setwd("C:\\Users\\btayo\\Desktop\\grade_classifier")
+setwd("C:\\Users\\btayo\\Desktop\\grade_classifier")
 
-2) Then use the function download.file(url, filename) to download the file. Here, url is a string containing the URL of the file, and filename is the filename of the destination file. 
+Then use the function download.file(url, filename) to download the file. Here, url is a string containing the URL of the file, and filename is the filename of the destination file. 
+
 # Notes on providing the correct URL
 If you navigate to the github repository https://github.com/bot13956/datasets and click on the file: introduction_to_physics_grades.csv, it takes you to the following URL: https://github.com/bot13956/datasets/blob/master/introduction_to_physics_grades.csv
 If you input this URL into your download.file() function, for example using the command:
