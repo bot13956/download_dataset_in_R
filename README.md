@@ -21,7 +21,7 @@ Content type 'text/html; charset=utf-8' length unknown
 
 downloaded 195 KB
 
-The file has been downloaded incorrectly, as the content type is set to text/html. If you navigate to your working directory (that is the "C:/Users/btayo/Desktop/grade_classifier" directory in this example) and click on the downloaded "grades.csv" in your local directory, you notice that the file has been downloaded in html format. This is definitely not the correct format.  Because we are downloading as csv file, we want the content type to be set to text/plain, not text/html. 
+The file has been downloaded incorrectly, as the content type is set to text/html. If you navigate to your working directory (that is the "C:/Users/btayo/Desktop/grade_classifier" directory in this example) and click on the downloaded "grades.csv" file in your local directory, you notice that the file has been downloaded in html format. This is definitely not the correct format.  Because we are downloading a csv file, we want the content type to be set to text/plain, not text/html. 
 
 To download the csv file in the text/plain format, navigate to the github repository: https://github.com/bot13956/datasets
 
