@@ -1,6 +1,6 @@
 # download_dataset_in_R
 
-This tutorial explores two important ways of downloading a dataset from the internet. Most often, we use data from various sources to perform analysis. In most cases, the data can be downloaded from the internet. In this tutorial, we provide easy step-by-step instructions that can be used to download files from the internet. The instructions are applicable for any file type, however we will focus on comma separated values (cvs) files, since most datasets are saved in this format. In this example, we show how to download the file: introduction_to_physics_grades.csv from the following repository: https://github.com/bot13956/datasets
+This tutorial explores two important ways of downloading a dataset from the internet. Most often, we use data from various sources to perform analysis. In most cases, the data can be downloaded from the internet. In this tutorial, we provide easy step-by-step instructions that can be used to download files from the internet. The instructions are applicable for any file type, however we will focus on comma separated values (csv) files, since most datasets are saved in this format. In this example, we show how to download the file: introduction_to_physics_grades.csv from the following repository: https://github.com/bot13956/datasets
 
 # Method 1: Using the download.file() function in R
 Use the function setwd() to choose the directory where the file should be saved:
